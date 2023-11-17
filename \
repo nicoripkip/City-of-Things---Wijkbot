@@ -1,0 +1,22 @@
+#include "ros/ros.h"
+#include <wiringPi.h>
+
+
+
+
+
+int main(int argc, char **argv)
+{
+	// Setup ROS stuff
+	ros::init(argc, argv, "ti_project56_lidar_sensor");
+	ROS_INFO_STREAM("Lidar Sensor package is gestart!");
+	ros::NodeHandle node;
+
+	// Setup WiringPi
+	wiringPiSetup();
+
+
+	ros::spin();
+
+	return 0;
+}

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=tmux new-session -d -s mysession 'bash -c "source ~/Documents/Boot/ipserver.sh"; exec bash'
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enable=true
+Name[en_US]=MyScript
+Name=MyScript
+Comment[en_US]=henk
+Comment=henk

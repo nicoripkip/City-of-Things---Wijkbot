@@ -19,8 +19,9 @@ De huidige opdracht richt zich op het toevoegen van functionaliteiten aan de bot
 1. **Hoverboard Firmware Flashen**: Voordat u begint, is het noodzakelijk om de firmware van het hoverboard te flashen. Gedetailleerde instructies hiervoor zijn te vinden op de [hoverboard-firmware-hack-FOC GitHub-pagina](https://github.com/EFeru/hoverboard-firmware-hack-FOC).
 
 2. **Code/Functionaliteit Toevoegen**:
-   - Maak een nieuwe directory aan in `Documents/Code`.
-   - Voor ROS-gerelateerde projecten, voeg een nieuwe directory toe in `Documents/Code/catkin_ws/src`.
+   - Maak een nieuwe directory aan in Documents/Code.
+   - Voor ROS-gerelateerde projecten, voeg een nieuwe directory toe in Documents/Code/catkin_ws/src.
+   - Start door een ROS-workspace te creëren volgens de [ROS-workspace tutorial](http://wiki.ros.org/catkin/Tutorials/create_a_workspace). Gebruik deze workspace (aangeduid als $CATKIN_WORKSPACE) om uw project uit te voeren.
 
 3. **ROS Environment Setup**: Voeg de volgende regel toe aan uw `.bashrc` bestand om ROS in elke terminal/shell sessie beschikbaar te maken:
    ```

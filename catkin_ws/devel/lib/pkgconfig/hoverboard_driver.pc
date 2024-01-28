@@ -1,0 +1,8 @@
+prefix=/home/ubuntu/catkin_ws/devel
+
+Name: hoverboard_driver
+Description: Description of hoverboard_driver
+Version: 0.0.1
+Cflags: -I/home/ubuntu/catkin_ws/devel/include -I/home/ubuntu/catkin_ws/src/hoverboard-driver/include
+Libs: -L${prefix}/lib 
+Requires: 

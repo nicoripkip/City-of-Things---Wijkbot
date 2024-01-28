@@ -1,0 +1,48 @@
+
+
+import rospy
+from std_msgs.msg import String
+import json
+
+sensor_data = ""
+
+
+class Direction:
+    def __init__(self):
+        pass
+
+
+def calculator_callback(data):
+    global sensor_data
+
+    try:
+        # Parse the JSON string directly (no need for json.loads)
+        sensor_data = json.loads(data)
+
+        # Access individual sensor values
+        sonar1_value = sensor_data.get("sonar1")
+        sonar2_value = sensor_data.get("sonar2")
+        sonar3_value = sensor_data.get("sonar3")
+
+        # Do something with the values (print them in this example)
+        print(f"Sonar 1 value: {sonar1_value}")
+        print(f"Sonar 2 value: {sonar2_value}")
+        print(f"Sonar 3 value: {sonar3_value}")
+
+    except json.JSONDecodeError as e:
+        print(f"Error decoding JSON: {e}")
+
+def main():
+    rospy.init_node("ti_project56_robot_calculator_node")
+    rospy.loginfo("Robot calculator module loaded")
+    
+    rospy.Subscriber("/hoverboard/project56/calculator", String, calculator_callback)
+    
+    col_pub = rospy.Publisher
+
+
+    rospy.spin()
+
+
+if __name__ == "__main__":
+    main()

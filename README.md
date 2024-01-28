@@ -11,7 +11,7 @@ De huidige opdracht richt zich op het toevoegen van functionaliteiten aan de bot
 ## Systeemvereisten
 
 - Ubuntu 20.04
-- ROS
+- ROS Noetic
 - Gehackte 'hoverboard'-hardware
 
 ## Installatie

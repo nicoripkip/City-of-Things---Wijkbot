@@ -1,0 +1,5 @@
+#!/bin/bash
+
+pid=$(pgrep -f "check.sh")
+if [ -n "$pid" ]; th	kill "$pid"
+	echo "Script stopped."

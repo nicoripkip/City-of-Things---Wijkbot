@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/Documents/Code/catkin_ws/devel
-
-Name: ti_project56_robot_web
-Description: Description of ti_project56_robot_web
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Start tmux sessions for each node
+sleep 1
+sudo 
+tmux new-session -d -s communicator_session "source ~/catkin_ws/devel/setup.sh; rosrun ti_project56_robot_communicator ti_project56_robot_communicator_node.py"
+sleep 1
+tmux new-session -d -s calculator_session "source ~/catkin_ws/devel/setup.sh; rosrun ti_project56_robot_calculator ti_project56_robot_calculator_node.py"
+sleep 1
+tmux new-session -d -s controller_session "source ~/catkin_ws/devel/setup.sh; rosrun ti_project56_robot_controller ti_project56_robot_controller_node.py"
+
+sleep 5
+source ~/Documents/Code/Compass/catkin_ws/devel/setup.sh
+
+# Start a tmux session for the launch file
+# tmux new-session -d -s i2c_imu_session "roslaunch i2c_imu i2c_imu_auto.launch"
+sleep 1
+tmux new-session -d -s check_session "~/check.sh"
+
+
+

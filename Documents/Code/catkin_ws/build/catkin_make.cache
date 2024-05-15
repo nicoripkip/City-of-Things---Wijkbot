@@ -1,2 +1,0 @@
-ti_project56_robot_calculator:ti_project56_robot_communicator:ti_project56_robot_controller:ti_project56_robot_web
--DCATKIN_DEVEL_PREFIX=/home/ubuntu/Documents/Code/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/Documents/Code/catkin_ws/install -G Unix Makefiles

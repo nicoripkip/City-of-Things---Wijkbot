@@ -1,8 +1,0 @@
-prefix=/home/ubuntu/Documents/Code/catkin_ws/install
-
-Name: ti_project56_lidar_sensor
-Description: Description of ti_project56_lidar_sensor
-Version: 1.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 
